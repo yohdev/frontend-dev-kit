@@ -79,13 +79,3 @@ itself when changes are detected
 * By default, the bundled Bootstrap files (css/js) are included. If you find
   you need to override a section, the full bootstrap sources are included in
   the `source/vendor` folder
-
-## Migration
-
-When ready to migrate, slight adjustments are needed to allow conversion to a pi-core project.
-
-- `/source` will need to be moved to `{theme dir}/assets/source`
-- The `gulpfile.js` will need to be replaced with the contents of `migration-gulpfile.js`
-  - (This will correctly set all build paths to match pi-core enqueueing expectation)
-- The `package.json` will need to be replaced with the contents of `migration-package.json` 
-  - (This introduces the `gulp-rename` module to move all assets to the right place)
